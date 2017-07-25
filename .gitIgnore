@@ -1,0 +1,14 @@
+# IntelliJ
+.idea/
+.shelf/
+*.iml
+*.ipr
+*.iws
+*.log
+
+# Node modules
+
+node_modules/
+
+#lib
+lib/

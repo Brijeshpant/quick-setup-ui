@@ -1,0 +1,27 @@
+{
+  "name": "accelerator-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "babel tasks/projectCreation.js --out-file script-transpiled.js",
+    "compile": "babel tasks --out-dir lib --watch",
+    "prepublish": "npm run compile",
+    "build": "node lib/createJsProject.js"
+  },
+  "author": "brijesh",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "inquirer": "^3.0.6",
+    "json-templater": "^1.1.0",
+    "json-templates": "^1.5.0",
+    "mu2": "^0.5.21",
+    "node-fs-extra": "^0.8.1",
+    "npm-run": "^4.1.2",
+    "prompt": "^1.0.0",
+    "readline": "^1.3.0"
+  }
+}
